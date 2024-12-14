@@ -1,0 +1,200 @@
+Gender,Education Level,Marital Status,Income,Credit Score,Employment Status,Debt-to-Income Ratio,Risk Rating
+Male,PhD,Divorced,72799,688,Unemployed,0.154313296,Low
+Female,Bachelor's,Widowed,,690,Employed,0.148919643,High
+Non-binary,Master's,Single,55687,600,Employed,0.362398017,High
+Male,Bachelor's,Single,26508,622,Unemployed,0.454964381,High
+Non-binary,Bachelor's,Widowed,49427,766,Unemployed,0.143242424,Low
+Non-binary,PhD,Divorced,,717,Unemployed,0.29598445,High
+Non-binary,Master's,Widowed,45280,672,Self-employed,0.378889937,Low
+Male,Bachelor's,Widowed,93678,,Unemployed,0.396635724,Low
+Non-binary,Bachelor's,Widowed,20205,710,Unemployed,0.335964978,Low
+Male,Bachelor's,Married,32190,600,Self-employed,0.484333305,Low
+Non-binary,Master's,Single,116212,707,Employed,0.114133748,High
+Non-binary,Master's,Divorced,78855,718,Self-employed,0.193921289,Low
+Female,PhD,Divorced,,686,Self-employed,0.328174707,High
+Male,High School,Divorced,79454,688,Self-employed,0.329281544,High
+Male,High School,Divorced,119510,,Employed,0.499721861,High
+Female,PhD,Divorced,,,Self-employed,0.550745935,Low
+Male,High School,Married,70978,706,Unemployed,0.266940909,High
+Female,Master's,Widowed,102628,654,Unemployed,0.161832579,High
+Non-binary,Bachelor's,Divorced,,738,Employed,0.338970973,Low
+Non-binary,PhD,Married,21084,702,Employed,0.231046374,High
+Female,PhD,Divorced,51460,,Unemployed,0.430232588,High
+Non-binary,PhD,Widowed,100169,796,Employed,0.174743185,High
+Non-binary,PhD,Single,,664,Self-employed,0.106281464,High
+Non-binary,Bachelor's,Divorced,118318,702,Unemployed,0.228351473,Low
+Female,High School,Divorced,61811,641,Self-employed,0.199707086,Low
+Male,PhD,Single,94796,742,Unemployed,0.355808376,Low
+Non-binary,PhD,Single,85355,667,Employed,0.198897711,High
+Male,PhD,Married,93133,791,Employed,0.282850057,Low
+Female,PhD,Married,,749,Self-employed,0.320230266,Low
+Male,PhD,Married,,636,Employed,0.460985402,Low
+Male,PhD,Married,115201,,Unemployed,0.243942664,High
+Non-binary,High School,Divorced,109882,,Unemployed,0.489437675,Low
+Non-binary,PhD,Married,46408,632,Unemployed,0.185325306,Low
+Non-binary,PhD,Single,38065,,Self-employed,0.391979313,Low
+Female,Bachelor's,Widowed,,673,Self-employed,0.483784345,Low
+Non-binary,High School,Widowed,,637,Self-employed,0.5443904,Low
+Male,Bachelor's,Divorced,117392,685,Self-employed,0.470600519,High
+Female,Master's,Single,54754,604,Self-employed,0.287418594,High
+Non-binary,High School,Divorced,109379,606,Self-employed,0.454458037,Low
+Female,High School,Single,33065,783,Self-employed,0.116680916,Low
+Male,Master's,Single,,,Unemployed,0.458481351,Low
+Female,High School,Single,101496,715,Employed,0.53378731,High
+Female,PhD,Divorced,42787,,Employed,0.224991083,Low
+Female,Master's,Divorced,,748,Unemployed,0.562809958,Low
+Male,Bachelor's,Widowed,73952,631,Unemployed,0.143644091,Low
+Non-binary,Master's,Divorced,54247,,Unemployed,0.344651883,Low
+Male,Bachelor's,Married,85689,,Unemployed,0.336009427,High
+Female,Bachelor's,Divorced,59593,691,Unemployed,0.424079453,Low
+Non-binary,Bachelor's,Married,69237,,Employed,0.516255497,Low
+Male,PhD,Widowed,77146,796,Self-employed,0.323186386,High
+Female,PhD,Single,59300,,Employed,0.235760539,Low
+Non-binary,Bachelor's,Married,82233,,Self-employed,0.471530629,Low
+Non-binary,PhD,Single,93509,703,Unemployed,0.528582348,High
+Non-binary,Bachelor's,Married,,763,Employed,0.302038878,Low
+Non-binary,High School,Divorced,,721,Unemployed,0.418045622,High
+Male,Bachelor's,Divorced,85164,710,Unemployed,0.257828553,High
+Male,High School,Widowed,119747,613,Self-employed,0.46492483,High
+Non-binary,Bachelor's,Married,93728,727,Unemployed,0.407184509,Low
+Non-binary,PhD,Married,100908,764,Employed,0.240809219,High
+Male,PhD,Widowed,,608,Unemployed,0.465760185,High
+Male,Bachelor's,Divorced,29868,635,Employed,0.350454133,Low
+Female,Master's,Married,68776,612,Unemployed,0.332396791,Low
+Female,Bachelor's,Married,98669,720,Unemployed,0.167904091,High
+Non-binary,Master's,Single,112545,712,Unemployed,0.252172854,Low
+Non-binary,PhD,Widowed,118717,647,Self-employed,0.185634504,Low
+Male,Bachelor's,Single,,649,Self-employed,0.430090518,High
+Male,Bachelor's,Single,52822,636,Employed,0.498698763,High
+Non-binary,PhD,Widowed,51280,750,Employed,0.550130495,High
+Female,Bachelor's,Divorced,63915,,Employed,0.362397446,High
+Female,Master's,Widowed,67046,,Unemployed,0.319500175,Low
+Male,Master's,Divorced,106526,650,Employed,0.544867397,Low
+Non-binary,Master's,Married,,700,Employed,0.168123709,Low
+Female,Bachelor's,Divorced,91691,,Unemployed,0.568474245,High
+Male,Master's,Widowed,,692,Self-employed,0.466075526,Low
+Non-binary,Bachelor's,Widowed,37105,720,Employed,0.412777028,High
+Female,Bachelor's,Single,31063,793,Self-employed,0.143936101,Low
+Female,High School,Married,,,Self-employed,0.155495082,High
+Female,Bachelor's,Single,,,Self-employed,0.150792729,Low
+Non-binary,Master's,Single,56108,796,Self-employed,0.111494703,High
+Female,Bachelor's,Married,69625,636,Unemployed,0.506634373,Low
+Non-binary,Master's,Divorced,82093,726,Self-employed,0.190221959,High
+Female,Master's,Widowed,100015,615,Unemployed,0.484642491,Low
+Female,Master's,Divorced,96293,708,Employed,0.12939421,Low
+Non-binary,Bachelor's,Single,30680,,Self-employed,0.243023798,Low
+Male,Bachelor's,Single,,627,Self-employed,0.255696688,Low
+Male,Bachelor's,Married,62541,680,Employed,0.244546545,High
+Non-binary,Bachelor's,Single,48069,670,Unemployed,0.157519127,Low
+Female,High School,Married,56895,,Self-employed,0.227617324,Low
+Female,PhD,Married,72433,792,Self-employed,0.327373935,Low
+Non-binary,PhD,Divorced,,640,Self-employed,0.343555167,High
+Female,Master's,Single,,734,Self-employed,0.378206875,Low
+Non-binary,Master's,Widowed,65266,617,Unemployed,0.268944281,Low
+Male,Master's,Widowed,98578,663,Self-employed,0.514670637,Low
+Male,High School,Married,90227,770,Employed,0.518758954,Low
+Non-binary,High School,Divorced,107081,740,Employed,0.108793817,Low
+Female,High School,Widowed,82878,748,Self-employed,0.584911257,Low
+Non-binary,Bachelor's,Widowed,46439,645,Employed,0.443604125,Low
+Non-binary,High School,Widowed,44085,687,Unemployed,0.448937891,Low
+Male,High School,Married,35817,731,Unemployed,0.505459747,Low
+Non-binary,Bachelor's,Married,54648,,Unemployed,0.121472995,High
+Female,High School,Married,65104,699,Employed,0.337761725,Low
+Male,PhD,Married,109698,793,Self-employed,0.347851155,High
+Male,Bachelor's,Single,28906,724,Unemployed,0.500613651,Low
+Male,Master's,Widowed,104766,764,Unemployed,0.211525061,Low
+Female,Master's,Widowed,79556,742,Employed,0.322356139,Low
+Male,Master's,Single,116102,629,Employed,0.516362513,High
+Female,PhD,Widowed,105141,,Self-employed,0.162774178,Low
+Non-binary,High School,Widowed,20947,776,Unemployed,0.218403224,Low
+Non-binary,PhD,Single,,660,Self-employed,0.297577945,High
+Male,High School,Married,32094,634,Self-employed,0.549456544,High
+Female,High School,Single,67984,,Employed,0.13482981,High
+Non-binary,Master's,Widowed,108177,735,Employed,0.335284356,High
+Female,High School,Divorced,30295,686,Unemployed,0.252783311,Low
+Female,PhD,Widowed,96591,722,Employed,0.584494809,High
+Male,PhD,Single,,624,Employed,0.455208343,Low
+Male,Master's,Married,83865,663,Unemployed,0.358704651,Low
+Female,High School,Married,51236,718,Self-employed,0.168630607,Low
+Non-binary,Master's,Single,,651,Self-employed,0.49222995,High
+Non-binary,High School,Divorced,42970,703,Employed,0.358687273,High
+Non-binary,PhD,Divorced,101863,688,Employed,0.219403114,Low
+Male,Master's,Widowed,107366,655,Employed,0.416617868,Low
+Female,PhD,Widowed,101848,699,Self-employed,0.591653333,High
+Female,PhD,Married,74030,711,Unemployed,0.160676888,Low
+Male,Master's,Divorced,56116,636,Employed,0.313107732,High
+Male,PhD,Single,103794,,Unemployed,0.412109478,Low
+Male,Bachelor's,Married,79300,697,Employed,0.216722419,Low
+Male,PhD,Single,101855,686,Self-employed,0.572524406,Low
+Male,PhD,Single,89535,624,Unemployed,0.117355071,Low
+Non-binary,PhD,Divorced,107329,735,Self-employed,0.23280902,Low
+Non-binary,Master's,Widowed,61048,,Employed,0.266383747,Low
+Non-binary,High School,Widowed,99622,720,Employed,0.419813928,Low
+Male,PhD,Divorced,110896,689,Self-employed,0.106251703,High
+Female,PhD,Single,64541,703,Self-employed,0.206311988,High
+Non-binary,PhD,Single,26613,771,Employed,0.107198287,Low
+Male,Bachelor's,Divorced,,721,Unemployed,0.363903795,Low
+Female,PhD,Widowed,50885,669,Unemployed,0.258570035,Low
+Male,Master's,Divorced,107050,711,Self-employed,0.502107966,High
+Non-binary,PhD,Divorced,,713,Self-employed,0.554183083,High
+Non-binary,Master's,Widowed,91540,760,Employed,0.232628264,Low
+Male,PhD,Single,,632,Unemployed,0.126001223,High
+Male,High School,Divorced,114877,699,Unemployed,0.389906857,High
+Female,Bachelor's,Divorced,44283,755,Self-employed,0.116135309,Low
+Female,High School,Single,60385,743,Self-employed,0.383779017,Low
+Male,Master's,Divorced,,618,Unemployed,0.346111901,High
+Female,Master's,Divorced,47785,,Employed,0.369847066,High
+Non-binary,Bachelor's,Single,69895,680,Unemployed,0.593281265,Low
+Male,High School,Divorced,61559,623,Unemployed,0.530640775,Low
+Female,High School,Single,40113,722,Employed,0.496244458,Low
+Female,Bachelor's,Single,29797,727,Self-employed,0.509303064,Low
+Non-binary,Bachelor's,Divorced,31137,757,Unemployed,0.441794267,High
+Female,PhD,Divorced,115923,726,Self-employed,0.287310878,High
+Male,High School,Single,117661,763,Unemployed,0.565118423,Low
+Female,High School,Widowed,69738,727,Self-employed,0.387483457,Low
+Female,Master's,Divorced,91035,,Self-employed,0.427505537,High
+Non-binary,PhD,Divorced,76795,645,Self-employed,0.508511242,Low
+Male,PhD,Single,69029,,Unemployed,0.369606846,Low
+Female,PhD,Married,65463,710,Unemployed,0.509355158,Low
+Non-binary,Bachelor's,Single,,791,Self-employed,0.177489309,Low
+Non-binary,Bachelor's,Married,40561,632,Unemployed,0.381899834,Low
+Female,Bachelor's,Single,23159,634,Employed,0.593406902,High
+Non-binary,High School,Widowed,61232,643,Unemployed,0.151099075,Low
+Female,Bachelor's,Single,108304,675,Self-employed,0.134004327,High
+Non-binary,Bachelor's,Widowed,,728,Employed,0.345462911,Low
+Female,High School,Widowed,118679,731,Employed,0.353951633,Low
+Male,Master's,Single,89126,643,Employed,0.131449159,High
+Female,PhD,Divorced,35198,718,Unemployed,0.155828771,Low
+Non-binary,PhD,Widowed,104677,784,Unemployed,0.304836002,Low
+Non-binary,PhD,Single,,699,Unemployed,0.181094003,Low
+Female,Master's,Married,80047,697,Employed,0.36146304,High
+Non-binary,Master's,Divorced,80523,604,Employed,0.112270249,Low
+Non-binary,PhD,Divorced,117835,640,Self-employed,0.41214393,High
+Non-binary,PhD,Divorced,,604,Employed,0.410342991,High
+Female,Bachelor's,Divorced,,750,Self-employed,0.448739802,Low
+Non-binary,Master's,Married,91656,661,Self-employed,0.515295615,High
+Non-binary,Master's,Single,87687,791,Unemployed,0.315225662,High
+Female,PhD,Divorced,81289,722,Employed,0.248479439,Low
+Female,Bachelor's,Widowed,27807,681,Employed,0.497042103,High
+Male,Bachelor's,Widowed,,711,Employed,0.383451591,Low
+Female,PhD,Single,20987,640,Employed,0.442812684,Low
+Non-binary,Master's,Widowed,61876,791,Unemployed,0.114673538,Low
+Female,Master's,Widowed,108454,716,Unemployed,0.588002314,High
+Male,Master's,Widowed,,753,Self-employed,0.104689105,Low
+Female,PhD,Single,87346,,Employed,0.556599054,Low
+Male,High School,Widowed,28583,611,Employed,0.200143793,High
+Female,PhD,Divorced,,705,Employed,0.119108756,Low
+Female,High School,Married,31340,790,Self-employed,0.195110048,Low
+Male,Bachelor's,Widowed,50737,624,Self-employed,0.538422931,High
+Non-binary,Master's,Widowed,88056,684,Employed,0.361356668,Low
+Male,PhD,Single,115287,,Unemployed,0.39251234,Low
+Male,Bachelor's,Divorced,39330,769,Self-employed,0.454610825,Low
+Non-binary,PhD,Divorced,111594,715,Unemployed,0.100815126,Low
+Female,High School,Divorced,102789,742,Employed,0.271307607,High
+Non-binary,Bachelor's,Widowed,,793,Employed,0.435937741,Low
+Non-binary,High School,Divorced,27313,786,Self-employed,0.15104681,Low
+Male,PhD,Widowed,87228,602,Self-employed,0.555169433,Low
+Female,Bachelor's,Divorced,101844,688,Employed,0.251662122,Low
+Male,Master's,Widowed,102949,637,Self-employed,0.351584417,Low
+Non-binary,High School,Married,28673,699,Unemployed,0.408040672,High
+Female,Bachelor's,Widowed,35973,663,Unemployed,0.432494288,High
