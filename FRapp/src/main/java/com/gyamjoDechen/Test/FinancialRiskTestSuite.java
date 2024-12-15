@@ -174,7 +174,7 @@ public class FinancialRiskTestSuite {
         System.out.println("Model Accuracy: " + accuracy + "%");
 
         // Assert that accuracy meets the specified threshold (e.g., 85%)
-        assertTrue("Model accuracy is below the acceptable threshold!", accuracy >= 75);
+        assertTrue("Model accuracy is below the acceptable threshold!", accuracy >= 80);
     }
 
 
