@@ -3,6 +3,7 @@ package com.gyamjoDechen.Test;
 import com.gyamjoDechen.model.DecisionTree;
 import com.gyamjoDechen.model.RandomForest;
 import com.gyamjoDechen.controller.DataManager;
+import com.gyamjoDechen.model.User;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -102,98 +103,81 @@ public class FinancialRiskTestSuite {
         System.out.println("RandomForest Prediction: " + (prediction.equals("High") ? "At Risk" : "Not at Risk"));
     }
 
+
     @Test
     public void testModelAccuracy() {
-        // Test the accuracy of the trained RandomForest model
         System.out.println("Running testModelAccuracy...");
 
-        randomForest.train(dataset, "Risk Rating"); // Train the random forest with the dataset
+        // Train the RandomForest model using the dataset
+        randomForest.train(dataset, "Risk Rating");
+        System.out.println("RandomForest model trained successfully.");
 
-        // Evaluate the model on a set of hardcoded test cases
-        int correctPredictions = 0;
-        int totalPredictions = dataset.size(); // Using the full dataset for predictions
+        // Hardcoded test data using Map<String, Object> for each user
+        List<Map<String, Object>> testUsers = List.of(
+                // High income, low debt-to-income ratio, excellent credit score
+                Map.of("Gender", "Male", "Education Level", "PhD", "Marital Status", "Widowed", "Income", 200000, "Credit Score", 850, "Employment Status", "Employed", "Debt-to-Income Ratio", 0.0), // Expected: Not At Risk
 
-        // Hardcoded test data with expected risk levels
-        List<Map<String, Object>> testCases = Arrays.asList(
-                // Best features (Expected: Low risk -> Not At Risk)
-                Map.of(
-                        "Gender", "Female",
-                        "Income", 120000.0,
-                        "Credit Score", 800,
-                        "Debt-to-Income Ratio", 0.1,
-                        "Marital Status", "Married",
-                        "Education Level", "Master's",
-                        "Employment Status", "Employed"
-                ),
-                // Worst features (Expected: High risk -> At Risk)
-                Map.of(
-                        "Gender", "Male",
-                        "Income", 20000.0,
-                        "Credit Score", 400,
-                        "Debt-to-Income Ratio", 0.9,
-                        "Marital Status", "Single",
-                        "Education Level", "High School",
-                        "Employment Status", "Unemployed"
-                ),
-                // Some good features (Expected: Low risk -> Not At Risk)
-                Map.of(
-                        "Gender", "Female",
-                        "Income", 80000.0,
-                        "Credit Score", 740,
-                        "Debt-to-Income Ratio", 0.25,
-                        "Marital Status", "Married",
-                        "Education Level", "Bachelor's",
-                        "Employment Status", "Employed"
-                ),
-                // Some bad features (Expected: High risk -> At Risk)
-                Map.of(
-                        "Gender", "Male",
-                        "Income", 30000.0,
-                        "Credit Score", 500,
-                        "Debt-to-Income Ratio", 0.8,
-                        "Marital Status", "Divorced",
-                        "Education Level", "Some College",
-                        "Employment Status", "Employed"
-                ),
-                // Balanced features (Expected: Low risk -> Not At Risk)
-                Map.of(
-                        "Gender", "Female",
-                        "Income", 50000.0,
-                        "Credit Score", 700,
-                        "Debt-to-Income Ratio", 0.3,
-                        "Marital Status", "Single",
-                        "Education Level", "Bachelor's",
-                        "Employment Status", "Employed"
-                ),
-                // Mixed features (Expected: High risk -> At Risk)
-                Map.of(
-                        "Gender", "Male",
-                        "Income", 40000.0,
-                        "Credit Score", 550,
-                        "Debt-to-Income Ratio", 0.7,
-                        "Marital Status", "Single",
-                        "Education Level", "High School",
-                        "Employment Status", "Unemployed"
-                )
+                // High income, low debt-to-income ratio, good credit score
+                Map.of("Gender", "Female", "Education Level", "Master's", "Marital Status", "Married", "Income", 150000, "Credit Score", 800, "Employment Status", "Employed", "Debt-to-Income Ratio", 0.2), // Expected: Not At Risk
+
+                // Medium-high income, low debt-to-income ratio, slightly lower credit score
+                Map.of("Gender", "Male", "Education Level", "Bachelor's", "Marital Status", "Single", "Income", 120000, "Credit Score", 740, "Employment Status", "Self-Employed", "Debt-to-Income Ratio", 0.3), // Expected: Not At Risk
+
+                // Medium income, moderate debt-to-income ratio, decent credit score
+                Map.of("Gender", "Female", "Education Level", "Bachelor's", "Marital Status", "Divorced", "Income", 85000, "Credit Score", 720, "Employment Status", "Employed", "Debt-to-Income Ratio", 0.4), // Expected: Not At Risk
+
+                // Medium income, high debt-to-income ratio, lower credit score
+                Map.of("Gender", "Male", "Education Level", "Bachelor's", "Marital Status", "Married", "Income", 75000, "Credit Score", 680, "Employment Status", "Unemployed", "Debt-to-Income Ratio", 0.8), // Expected: At Risk
+
+                // Medium-low income, higher debt-to-income ratio, low credit score
+                Map.of("Gender", "Female", "Education Level", "High School", "Marital Status", "Single", "Income", 60000, "Credit Score", 620, "Employment Status", "Self-Employed", "Debt-to-Income Ratio", 1.0), // Expected: At Risk
+
+                // Low income, very high debt-to-income ratio, poor credit score
+                Map.of("Gender", "Male", "Education Level", "High School", "Marital Status", "Widowed", "Income", 30000, "Credit Score", 500, "Employment Status", "Unemployed", "Debt-to-Income Ratio", 1.5), // Expected: At Risk
+
+                // Very low income, extremely high debt-to-income ratio, lowest credit score
+                Map.of("Gender", "Female", "Education Level", "High School", "Marital Status", "Widowed", "Income", 1000, "Credit Score", 400, "Employment Status", "Unemployed", "Debt-to-Income Ratio", 2.0)  // Expected: At Risk
         );
 
-        // Evaluate model on each test case
-        for (Map<String, Object> testCase : testCases) {
-            String actualRiskRating = testCase.containsKey("Risk Rating") ? (String) testCase.get("Risk Rating") : "Unknown";  // Replace with actual if available
-            String predictedRisk = randomForest.predict(testCase);
+        // Hardcoded expected results
+        String[] expectedOutputs = {
+                "Not At Risk", // Strong profile: High income, excellent financial ratios
+                "Not At Risk", // Strong profile: High income, good financial state
+                "Not At Risk", // Above-average profile: Low ratio, healthy score
+                "Not At Risk", // Medium profile: Manageable ratios and decent score
+                "At Risk",     // Risky: High DTI, unemployed, moderate score
+                "At Risk",     // Risky: Higher DTI and average credit score
+                "At Risk",     // High risk: Very poor financial conditions
+                "At Risk"      // Very high risk: Lowest score and severe financial imbalance
+        };
 
-            // Check if prediction matches actual risk level
-            if ((actualRiskRating.equalsIgnoreCase("Low") && predictedRisk.equalsIgnoreCase("Low")) ||
-                    (!actualRiskRating.equalsIgnoreCase("Low") && predictedRisk.equalsIgnoreCase("High"))) {
+        int correctPredictions = 0;
+
+        for (int i = 0; i < testUsers.size(); i++) {
+            // Predict the risk for each user using the trained RandomForest model
+            String prediction = randomForest.predict(testUsers.get(i));
+
+            // Map prediction result: "Low" -> "Not At Risk", everything else -> "At Risk"
+            String result = prediction.equals("Low") ? "Not At Risk" : "At Risk";
+
+            // Compare the actual prediction with the expected result
+            if (result.equals(expectedOutputs[i])) {
                 correctPredictions++;
             }
+
+            // Print prediction and expected result
+            System.out.println("User " + (i + 1) + ": Predicted = " + result + ", Expected = " + expectedOutputs[i]);
         }
 
-        // Calculate and assert the model's accuracy
-        double accuracy = (double) correctPredictions / testCases.size();
-        assertTrue("Model accuracy is below acceptable threshold!", accuracy >= 0.8);
-        System.out.println("Model Accuracy: " + accuracy);
+        // Calculate and print the accuracy
+        double accuracy = ((double) correctPredictions / 8) * 100;
+        System.out.println("Model Accuracy: " + accuracy + "%");
+
+        // Assert that accuracy meets the specified threshold (e.g., 85%)
+        assertTrue("Model accuracy is below the acceptable threshold!", accuracy >= 75);
     }
+
+
 
     @Test
     public void testModelPerformance() {

@@ -20,7 +20,7 @@ public class Main {
 
         // Load dataset from file
         System.out.println("Loading dataset...");
-        List<Map<String, Object>> dataset = dataManager.loadData("C:\\Users\\sherp\\OneDrive\\Desktop\\FRapp\\src\\main\\java\\com\\gyamjoDechen\\controller\\data.csv");
+        List<Map<String, Object>> dataset = dataManager.loadData("C:\\Users\\sherp\\OneDrive\\Desktop\\FRapp\\src\\main\\java\\com\\gyamjoDechen\\controller\\test.csv");
         System.out.println("Dataset loaded with " + dataset.size() + " records.");
 
         // Clean the dataset
