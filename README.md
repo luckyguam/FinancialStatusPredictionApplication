@@ -1,7 +1,6 @@
 # 💸 Financial Status Prediction Application
 
-Welcome to our final project for CSCI-370 at Queens College!  
-This Java-based desktop app predicts whether someone is financially **"At Risk"** or **"Not At Risk"** using machine learning (Random Forest) and gives helpful, personalized recommendations.
+Welcome to our Financial Risk Prediction tool! This Java-based desktop application is designed to help users understand their financial standing — whether they might be at **risk of financial distress** or not. It’s powered by a custom-built **Random Forest model** and follows the **MVC design pattern** to keep the code clean and organized.
 
 ---
 
