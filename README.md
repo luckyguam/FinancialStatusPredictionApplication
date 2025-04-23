@@ -1,76 +1,97 @@
 # 💸 Financial Status Prediction Application
 
-Welcome to our Financial Risk Prediction tool! This Java-based desktop application is designed to help users understand their financial standing — whether they might be at **risk of financial distress** or not. It’s powered by a custom-built **Random Forest model** and follows the **MVC design pattern** to keep the code clean and organized.
+Welcome to our final project for CSCI-370 at Queens College!  
+This Java-based desktop app predicts whether someone is financially **"At Risk"** or **"Not At Risk"** using machine learning (Random Forest) and gives helpful, personalized recommendations.
 
 ---
 
-## 📍 What It Does
+## 🚀 What This App Does
 
-Our application takes in basic financial information (like income, credit score, employment status, etc.) and uses machine learning to predict whether a person is financially "At Risk" or "Not At Risk." If the user is at risk, the app also gives **personalized recommendations** based on role models who are financially stable.
+It takes in financial data like income, credit score, debt ratio, and employment status, and uses a Random Forest model we built from scratch to predict financial risk. If the user is at risk, it gives advice by comparing them with people who are financially stable.
 
-It’s especially helpful for students, young professionals, or anyone looking to gain insight into their financial health and take proactive steps to improve it.
-
----
-
-## 🧱 Project Architecture
-
-We’ve used the **Model-View-Controller (MVC)** structure for this project:
-
-### ✅ Model
-- **User**: Represents user financial data.
-- **PredictionModel**: Uses a Random Forest algorithm to make predictions.
-- **DecisionTreeBuilder** / **RandomForestBuilder**: Custom-built tree training logic.
-- **DataImputation**: Cleans and fills missing values in the dataset.
-- **Recommendation**: Generates financial advice based on the predicted result.
-
-### 🎨 View
-- **UserInputForm**: A form where users answer simple yes/no financial questions.
-- **FinancialRiskView**: Shows whether the user is at financial risk.
-- **RecommendationView**: Displays helpful suggestions to improve financial status.
-
-### 🧠 Controller
-- **PredictionController**: Connects user input to the prediction logic.
-- **RecommendationController**: Handles the logic for showing suggestions.
-- **DataController**: Loads and prepares the dataset for training and testing.
+We created this tool to raise awareness and help people make smarter financial decisions.
 
 ---
 
-## 🗃️ Dataset Info
+## 🧱 Project Structure
 
-We’re using publicly available datasets from **Kaggle**:
-- Real-world financial profiles (students, workers, etc.)
-- CSV files with columns like:
-  - Income
-  - Employment status
-  - Credit score
-  - Debt-to-Income ratio
-  - Loan history
+This project follows the **MVC architecture** and is written in **pure Java**, no external ML libraries.
+
+📁 Folder: `FRapp/src/main/java/com/gyamjoDechen/`  
+Here’s what each part of the app does:
+
+### ✅ Model Classes
+- `User.java`: Holds user input like income, credit score, etc.
+- `PredictionModel.java`: Central ML logic using a custom Random Forest.
+- `RandomForestBuilder.java`: Builds a forest of decision trees.
+- `DecisionTreeBuilder.java`: Builds each individual tree.
+- `DataImputation.java`: Handles missing values.
+- `Recommendation.java`: Suggests personalized actions for improvement.
+
+### 🎨 View Classes
+- `UserInputForm.java`: Collects financial info through a basic UI.
+- `FinancialRiskView.java`: Shows whether the user is at risk or not.
+- `RecommendationView.java`: Displays helpful suggestions.
+
+### 🧠 Controller Classes
+- `PredictionController.java`: Manages the prediction process.
+- `RecommendationController.java`: Gets advice based on the result.
+- `DataController.java`: Loads CSV data and handles preprocessing.
 
 ---
 
-## 🔁 How It Works (Prediction Flow)
+## 📦 Dataset
 
-1. **User fills out** the yes/no form with their financial details.
-2. **Missing values** in the dataset (if any) are handled automatically.
-3. The Random Forest model is trained using bootstrapped samples.
-4. Each decision tree votes on the user's financial status.
-5. A final result is shown: "At Risk" or "Not At Risk."
-6. If "At Risk", the app compares the user with financially stable role models and shows personalized recommendations.
+- 📂 Location: CSV file in project directory (you provide it)
+- 🔗 Source: Real-world data from Kaggle
+- 🏷️ Example Columns:
+  - `income`
+  - `credit_score`
+  - `employment_status`
+  - `debt_to_income_ratio`
+  - `loan_default`
 
 ---
 
-## 💻 How to Run It
+## 🔁 How the App Works (Step-by-Step)
+
+1. User answers some yes/no financial questions in the app.
+2. Missing values in the data are cleaned up automatically.
+3. The `RandomForestBuilder` trains trees using bootstrapped samples.
+4. Trees vote to predict "At Risk" or "Not At Risk".
+5. If at risk, the app compares the user to "role model" users and suggests personalized improvements.
+
+---
+
+## 🧪 Example Questions
+
+- Are you currently unemployed?
+- Is your credit score under 600?
+- Are you spending more than 40% of your income on debt?
+- Have you missed a payment in the last 6 months?
+
+---
+
+## 🗣️ Sample Recommendations
+
+If someone is marked "At Risk", the system might say:
+- “Consider finding steady employment.”
+- “Your debt ratio is high. Try to pay down existing loans.”
+- “Users with similar income but lower debt tend to be more financially stable.”
+
+---
+
+## 🛠️ How to Run the App
 
 ### Prerequisites
-- Java 8 or higher
-- JavaFX (for the UI)
-- IDE like IntelliJ IDEA or Eclipse (or just command line)
-- Dataset CSV file
+- Java 8 or above
+- JavaFX installed
+- A CSV dataset file with financial data
 
-### Clone and Run
+### Run Locally
 
 ```bash
 git clone https://github.com/luckyguam/FinancialStatusPredictionApplication.git
-cd FinancialStatusPredictionApplication
-javac -d bin src/**/*.java
-java -cp bin Main
+cd FinancialStatusPredictionApplication/FRapp
+javac -d bin src/main/java/com/gyamjoDechen/*.java
+java -cp bin com.gyamjoDechen.Main
